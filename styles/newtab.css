@@ -6,6 +6,11 @@ body {
     color: white;
     text-align: center;
 }
+/* everything on the page sits inside #page, so the toolbar can push it down */
+#page {
+    position: relative;
+    min-height: 420px;
+}
 h1 {
     text-align: center;
     font-size: 3rem;
@@ -43,6 +48,15 @@ h1 {
 }
 #discordLink a {
     color: rgb(114, 137, 218);
+}
+#githubLink {
+    position: absolute;
+    top: 355px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#githubLink a {
+    color: white;
 }
 @keyframes logoImgRotation {
     100% { transform: translate(-50%, -50%) rotateY(360deg); }

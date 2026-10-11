@@ -21,7 +21,12 @@ if (getCookie("title") === null) {
 document.getElementById("settingsBackArrow").onclick = function() {
     document.cookie = "title=" + encodeURIComponent(getCookie("title")) + ";path=/";
     document.cookie = "icon=" + encodeURIComponent(getCookie("icon")) + ";path=/";
-    window.parent.closeSettingsIframe()
+    // go back to whatever this tab was showing before Settings
+    if (window.tacoToolbar && window.tacoToolbar.canGoBack()) {
+        window.tacoToolbar.back();
+    } else {
+        window.location.href = "/";
+    }
 }
 document.getElementById("resetTabCloakBtn").onclick = function() {
     document.cookie = "title=Taco Proxy" + ";path=/";

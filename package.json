@@ -1,0 +1,13 @@
+{
+    "name": "taco-proxy",
+    "version": "1.0.0",
+    "description": "Taco Proxy: a web proxy with a tabbed browser bar, built without iframes.",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "engines": {
+        "node": ">=18"
+    },
+    "license": "BSL-1.0"
+}

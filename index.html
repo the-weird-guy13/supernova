@@ -3,31 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles/index.css" rel="stylesheet">
-    <link id="favicon" href="images/favicon.ico" rel="icon">
-    <script src="https://kit.fontawesome.com/84672ba0d1.js" crossorigin="anonymous"></script>
+    <link href="styles/newtab.css" rel="stylesheet">
+    <link href="images/favicon.ico" rel="icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <script src="js/toolbar.js"></script>
     <script src="js/config.js" defer></script>
-    <title>Taco Proxy</title>
+    <script src="js/newtab.js" defer></script>
+    <title>New Tab</title>
 </head>
 <body>
-    <header>
-        <div class="tabs"></div>
-        <div class="searchBar">
-            <button id="prevPage" class="navBtn" title="Previous Page"><i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></button>
-            <button id="nextPage" class="navBtn" title="Next Page"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
-            <button id="refresh" class="navBtn" title="Refresh Page"><i class="fa-solid fa-arrow-rotate-right" style="color: #ffffff;"></i></button>
-            <div id="searchBar">
-                <input id="searchInput" placeholder="Search Taco Proxy or type a URL" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="true">
-                <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;" id="searchBtn"></i>
-            </div>
-            <button id="settingsBtn" class="navBtn" title="Settings"><i class="fa-solid fa-gear" style="color: #ffffff;"></i></button>
+    <div id="page">
+        <h1>Taco Proxy</h1>
+        <div class="container">
+            <img src="images/tacoblocks.jpg" alt="Taco Proxy Logo" id="logoImg">
         </div>
-    </header>
-    <main id="content"></main>
-    <div id="openTabToStart">Open a new tab to get started.</div>
+        <div id="discordLink">Join the <a href="" target="_blank">Discord</a> for more links</div>
+        <div id="credits">Made by <a href="https://www.youtube.com/@TacoBlocks12official" target="_blank">TacoBlocks12</a></div>
+        <div id="githubLink"></div>
+    </div>
     <script src="js/index.js"></script>
 </body>
 </html>
